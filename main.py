@@ -10,11 +10,11 @@ def home():
     return render_template('index.html')
 @app.route("/register", methods=['GET', 'POST'])
 def register():
-    form = RegistrationForm()
+    # form = RegistrationForm()
     # if form.validate_on_submit():
     #     flash(f"Account successfully created for {form.firstname.data}!!", 'success')
     #     return redirect(url_for('home')) 
-    return render_template('about.html') 
+    return render_template('register.html') 
 
 if __name__ == '__main__':
    app.run(debug=True, host="0.0.0.0")
